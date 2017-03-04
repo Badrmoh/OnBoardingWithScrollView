@@ -12,10 +12,24 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        var initialVC = sb.instantiateViewController(withIdentifier: "onboarding")
+        
+        let userDefaults = UserDefaults.standard
+        if userDefaults.bool(forKey: "onboardingComplete"){
+            initialVC = sb.instantiateViewController(withIdentifier: "master")
+        }
+        
+        window?.rootViewController = initialVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

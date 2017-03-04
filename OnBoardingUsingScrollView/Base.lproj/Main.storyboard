@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,38 +12,26 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OnBoardingUsingScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboarding" id="BYZ-38-t0r" customClass="ViewController" customModule="OnBoardingUsingScrollView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPw-CH-uud">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LsO-6F-JnS">
-                                <rect key="frame" x="169" y="689" width="77" height="37"/>
+                                <rect key="frame" x="149" y="620" width="77" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="77" id="xhA-dK-Ck4"/>
                                 </constraints>
                                 <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-Xc-Xil">
-                                <rect key="frame" x="67.666666666666686" y="766" width="280" height="70"/>
-                                <color key="backgroundColor" red="0.81737775259067358" green="0.32384950860757533" blue="0.75099782380822222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="BUI-W5-TTk"/>
-                                    <constraint firstAttribute="height" constant="70" id="VUe-j2-lNt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -57,14 +45,12 @@
                             <constraint firstItem="HPw-CH-uud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Msg-Oc-Fdt"/>
                             <constraint firstItem="LsO-6F-JnS" firstAttribute="centerX" secondItem="HPw-CH-uud" secondAttribute="centerX" id="Ohh-zM-S2X"/>
                             <constraint firstItem="HPw-CH-uud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PRc-dd-Moz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iZE-Xc-Xil" secondAttribute="bottom" constant="-100" id="Qrh-g9-qGB"/>
                             <constraint firstItem="LsO-6F-JnS" firstAttribute="top" secondItem="HPw-CH-uud" secondAttribute="bottom" id="SaN-Cr-o7g"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HPw-CH-uud" secondAttribute="bottom" id="TB2-re-w7E"/>
                             <constraint firstItem="HPw-CH-uud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="VWj-3E-mYn"/>
                             <constraint firstItem="LsO-6F-JnS" firstAttribute="top" secondItem="HPw-CH-uud" secondAttribute="bottom" constant="10" id="atu-hi-9x2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HPw-CH-uud" secondAttribute="bottom" id="dRg-qY-CPg"/>
                             <constraint firstItem="HPw-CH-uud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kSj-OJ-5Py"/>
-                            <constraint firstItem="iZE-Xc-Xil" firstAttribute="centerX" secondItem="LsO-6F-JnS" secondAttribute="centerX" id="mb5-Hm-DYY"/>
                             <constraint firstItem="HPw-CH-uud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="u1d-mc-4F3"/>
                             <constraint firstAttribute="trailing" secondItem="HPw-CH-uud" secondAttribute="trailing" id="xv2-sI-lRb"/>
                             <constraint firstItem="HPw-CH-uud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ybR-bW-4jb"/>
@@ -115,14 +101,97 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="goBtn" destination="iZE-Xc-Xil" id="G2n-hp-qcd"/>
                         <outlet property="myScrollView" destination="HPw-CH-uud" id="D8U-eM-73F"/>
                         <outlet property="pageControl" destination="LsO-6F-JnS" id="SmW-4I-1sw"/>
+                        <segue destination="f1p-hR-hbb" kind="show" identifier="showapp" id="iTL-SI-l6t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-100.00000000000001" y="120.65217391304348"/>
+        </scene>
+        <!--MasterVC-->
+        <scene sceneID="cem-PF-1OW">
+            <objects>
+                <viewController storyboardIdentifier="master" id="f1p-hR-hbb" customClass="masterVC" customModule="OnBoardingUsingScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xzp-T8-gnr"/>
+                        <viewControllerLayoutGuide type="bottom" id="dSM-bc-qCa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yQ9-5w-4aW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uss-UO-peq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DHL-rg-1b0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FitFat App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ou5-Bm-Ij9">
+                                            <rect key="frame" x="95" y="317" width="188" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="188" id="Te8-aG-ZDC"/>
+                                                <constraint firstAttribute="width" constant="188" id="f6S-F1-k06"/>
+                                                <constraint firstAttribute="height" constant="30" id="o9y-Eh-day"/>
+                                                <constraint firstAttribute="height" constant="30" id="pzH-37-KCo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                            <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Te8-aG-ZDC"/>
+                                                    <exclude reference="o9y-Eh-day"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=regular">
+                                                <mask key="constraints">
+                                                    <include reference="Te8-aG-ZDC"/>
+                                                    <exclude reference="f6S-F1-k06"/>
+                                                    <include reference="o9y-Eh-day"/>
+                                                    <exclude reference="pzH-37-KCo"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Ou5-Bm-Ij9" firstAttribute="leading" secondItem="DHL-rg-1b0" secondAttribute="leading" constant="95" id="0t3-UH-X5G"/>
+                                        <constraint firstItem="Ou5-Bm-Ij9" firstAttribute="centerY" secondItem="DHL-rg-1b0" secondAttribute="centerY" id="F73-j2-YAl"/>
+                                        <constraint firstItem="Ou5-Bm-Ij9" firstAttribute="centerX" secondItem="DHL-rg-1b0" secondAttribute="centerX" id="I8i-ml-uLX"/>
+                                        <constraint firstItem="Ou5-Bm-Ij9" firstAttribute="top" secondItem="DHL-rg-1b0" secondAttribute="top" constant="317" id="Zbv-bV-lMy"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="F73-j2-YAl"/>
+                                            <exclude reference="I8i-ml-uLX"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=regular">
+                                        <mask key="constraints">
+                                            <exclude reference="0t3-UH-X5G"/>
+                                            <include reference="F73-j2-YAl"/>
+                                            <include reference="I8i-ml-uLX"/>
+                                            <exclude reference="Zbv-bV-lMy"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="0.74357876712328763" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uss-UO-peq" firstAttribute="bottom" secondItem="dSM-bc-qCa" secondAttribute="top" id="44q-Ks-Ll8"/>
+                            <constraint firstItem="uss-UO-peq" firstAttribute="leading" secondItem="yQ9-5w-4aW" secondAttribute="leading" id="Imb-gE-2Ib"/>
+                            <constraint firstAttribute="trailing" secondItem="uss-UO-peq" secondAttribute="trailing" id="ndg-l6-YNc"/>
+                            <constraint firstItem="uss-UO-peq" firstAttribute="top" secondItem="yQ9-5w-4aW" secondAttribute="top" id="qwl-AN-Txo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8D-8B-pVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701.60000000000002" y="119.1904047976012"/>
         </scene>
     </scenes>
 </document>

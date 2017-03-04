@@ -12,7 +12,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var myScrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var goBtn: UIButton!
+    
     
     var button = UIButton()
     var lable = UILabel()
@@ -21,6 +21,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Configuring ScrollView
         myScrollView.delegate = self
         imageArr = [#imageLiteral(resourceName: "page1"),#imageLiteral(resourceName: "page2"),#imageLiteral(resourceName: "page3")]
         myScrollView.isPagingEnabled = true
@@ -28,21 +29,19 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         myScrollView.contentSize.width = self.view.frame.width * CGFloat(imageArr.count)
         myScrollView.frame.size = self.view.frame.size
         
-        //Create the button
-        lable.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
-        lable.text = "Let's go!"
-        lable.textColor = UIColor.white
-        lable.font = UIFont(name: "Avenir Next", size: 17.0)
-        lable.textAlignment = NSTextAlignment.center
-        
+        //Create the Let's go button
         button = UIButton(frame: CGRect(x: (self.view.frame.width / 2) - 100, y: self.view.frame.height - 5, width: 200, height: 50))
         button.backgroundColor = UIColor.orange
         button.layer.cornerRadius = 25.0
         button.layer.shadowColor = UIColor.black.cgColor
         button.layer.shadowRadius = 5.0
         button.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
-        
-        
+        button.setTitle("Let's go!", for: .normal)
+        button.isUserInteractionEnabled = true
+        button.tag = 1
+        button.addTarget(self, action: #selector(ViewController.showApp(sender:)), for: .touchUpInside)
+        self.view.addSubview(button)
+        self.view.bringSubview(toFront: button)
         
         //Addin' pages
         for n in 0..<imageArr.count {
@@ -55,8 +54,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             imageView.contentMode = .scaleAspectFit
             
             myScrollView.addSubview(imageView)
-            imageView.addSubview(button)
-            button.addSubview(lable)
+            
+            //button.addSubview(lable)
         }
     }
     
@@ -64,21 +63,28 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let page = scrollView.contentOffset.x / scrollView.frame.size.width
         pageControl.currentPage = Int(page)
         if page == 2 {
-            UIView.animate(withDuration: 0.4, animations: {self.button.frame.origin.y = self.view.frame.height - 130})
-        } else {
-            UIView.animate(withDuration: 0.4, animations: {self.button.frame.origin.y = self.view.frame.height + 130})
+            UIView.animate(withDuration: 0.2, animations: {self.button.frame.origin.y = self.view.frame.height - 120})
+        } else if page == 1{
+            UIView.animate(withDuration: 0.2, animations: {self.button.frame.origin.y = self.view.frame.height - 15})
+        } else if page == 0 {
+            UIView.animate(withDuration: 0.2, animations: {self.button.frame.origin.y = self.view.frame.height - 5})
         }
     }
     
-//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-//        let currentPage = scrollView.contentOffset
-//    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func showApp(sender:UIButton){
+        
+        //change user rootViewController default
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(true, forKey: "onboardingComplete")
+        userDefaults.synchronize()
+        
+        //present the App VC
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "master")
+        present(vc, animated: true, completion: nil)
+        
+        
     }
-
-
 }
 

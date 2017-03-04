@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		98F1ADFA1E69549700A4BA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1ADF91E69549700A4BA37 /* AppDelegate.swift */; };
 		98F1ADFC1E69549700A4BA37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1ADFB1E69549700A4BA37 /* ViewController.swift */; };
-		98F1ADFF1E69549700A4BA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F1ADFD1E69549700A4BA37 /* Main.storyboard */; };
 		98F1AE011E69549700A4BA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F1AE001E69549700A4BA37 /* Assets.xcassets */; };
 		98F1AE041E69549700A4BA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F1AE021E69549700A4BA37 /* LaunchScreen.storyboard */; };
 		98F1AE0F1E69549700A4BA37 /* OnBoardingUsingScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1AE0E1E69549700A4BA37 /* OnBoardingUsingScrollViewTests.swift */; };
 		98F1AE1A1E69549700A4BA37 /* OnBoardingUsingScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1AE191E69549700A4BA37 /* OnBoardingUsingScrollViewUITests.swift */; };
+		98F1AE281E6AA6C700A4BA37 /* masterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1AE271E6AA6C700A4BA37 /* masterVC.swift */; };
+		98F1AE2B1E6AB8DA00A4BA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F1AE291E6AB8DA00A4BA37 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		98F1ADF61E69549700A4BA37 /* OnBoardingUsingScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBoardingUsingScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F1ADF91E69549700A4BA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98F1ADFB1E69549700A4BA37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98F1ADFE1E69549700A4BA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98F1AE001E69549700A4BA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98F1AE031E69549700A4BA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98F1AE051E69549700A4BA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		98F1AE151E69549700A4BA37 /* OnBoardingUsingScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnBoardingUsingScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F1AE191E69549700A4BA37 /* OnBoardingUsingScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingUsingScrollViewUITests.swift; sourceTree = "<group>"; };
 		98F1AE1B1E69549700A4BA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F1AE271E6AA6C700A4BA37 /* masterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masterVC.swift; sourceTree = "<group>"; };
+		98F1AE2A1E6AB8DA00A4BA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OnBoardingUsingScrollView/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +101,9 @@
 			children = (
 				98F1ADF91E69549700A4BA37 /* AppDelegate.swift */,
 				98F1ADFB1E69549700A4BA37 /* ViewController.swift */,
-				98F1ADFD1E69549700A4BA37 /* Main.storyboard */,
+				98F1AE271E6AA6C700A4BA37 /* masterVC.swift */,
 				98F1AE001E69549700A4BA37 /* Assets.xcassets */,
+				98F1AE291E6AB8DA00A4BA37 /* Main.storyboard */,
 				98F1AE021E69549700A4BA37 /* LaunchScreen.storyboard */,
 				98F1AE051E69549700A4BA37 /* Info.plist */,
 			);
@@ -235,9 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F1AE2B1E6AB8DA00A4BA37 /* Main.storyboard in Resources */,
 				98F1AE041E69549700A4BA37 /* LaunchScreen.storyboard in Resources */,
 				98F1AE011E69549700A4BA37 /* Assets.xcassets in Resources */,
-				98F1ADFF1E69549700A4BA37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +267,7 @@
 			files = (
 				98F1ADFC1E69549700A4BA37 /* ViewController.swift in Sources */,
 				98F1ADFA1E69549700A4BA37 /* AppDelegate.swift in Sources */,
+				98F1AE281E6AA6C700A4BA37 /* masterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,20 +303,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		98F1ADFD1E69549700A4BA37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				98F1ADFE1E69549700A4BA37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		98F1AE021E69549700A4BA37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				98F1AE031E69549700A4BA37 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		98F1AE291E6AB8DA00A4BA37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98F1AE2A1E6AB8DA00A4BA37 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -514,6 +519,7 @@
 				98F1AE201E69549700A4BA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98F1AE211E69549700A4BA37 /* Build configuration list for PBXNativeTarget "OnBoardingUsingScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +528,7 @@
 				98F1AE231E69549700A4BA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98F1AE241E69549700A4BA37 /* Build configuration list for PBXNativeTarget "OnBoardingUsingScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +537,7 @@
 				98F1AE261E69549700A4BA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
