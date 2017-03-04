@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OnBoardingUsingScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPw-CH-uud">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="LsO-6F-JnS">
+                                <rect key="frame" x="169" y="689" width="77" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="xhA-dK-Ck4"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZE-Xc-Xil">
+                                <rect key="frame" x="67.666666666666686" y="766" width="280" height="70"/>
+                                <color key="backgroundColor" red="0.81737775259067358" green="0.32384950860757533" blue="0.75099782380822222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="BUI-W5-TTk"/>
+                                    <constraint firstAttribute="height" constant="70" id="VUe-j2-lNt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HPw-CH-uud" secondAttribute="trailing" id="2eB-Fn-pXw"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2il-7s-awi"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4eO-aT-5ss"/>
+                            <constraint firstItem="LsO-6F-JnS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9CX-va-adq"/>
+                            <constraint firstAttribute="trailing" secondItem="HPw-CH-uud" secondAttribute="trailing" id="ACb-VA-NdL"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DKk-xo-q9m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LsO-6F-JnS" secondAttribute="bottom" constant="10" id="Egj-AC-oR5"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Msg-Oc-Fdt"/>
+                            <constraint firstItem="LsO-6F-JnS" firstAttribute="centerX" secondItem="HPw-CH-uud" secondAttribute="centerX" id="Ohh-zM-S2X"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PRc-dd-Moz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iZE-Xc-Xil" secondAttribute="bottom" constant="-100" id="Qrh-g9-qGB"/>
+                            <constraint firstItem="LsO-6F-JnS" firstAttribute="top" secondItem="HPw-CH-uud" secondAttribute="bottom" id="SaN-Cr-o7g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HPw-CH-uud" secondAttribute="bottom" id="TB2-re-w7E"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="VWj-3E-mYn"/>
+                            <constraint firstItem="LsO-6F-JnS" firstAttribute="top" secondItem="HPw-CH-uud" secondAttribute="bottom" constant="10" id="atu-hi-9x2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HPw-CH-uud" secondAttribute="bottom" id="dRg-qY-CPg"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kSj-OJ-5Py"/>
+                            <constraint firstItem="iZE-Xc-Xil" firstAttribute="centerX" secondItem="LsO-6F-JnS" secondAttribute="centerX" id="mb5-Hm-DYY"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="u1d-mc-4F3"/>
+                            <constraint firstAttribute="trailing" secondItem="HPw-CH-uud" secondAttribute="trailing" id="xv2-sI-lRb"/>
+                            <constraint firstItem="HPw-CH-uud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ybR-bW-4jb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ACb-VA-NdL"/>
+                                <exclude reference="DKk-xo-q9m"/>
+                                <exclude reference="Msg-Oc-Fdt"/>
+                                <exclude reference="VWj-3E-mYn"/>
+                                <exclude reference="kSj-OJ-5Py"/>
+                                <exclude reference="u1d-mc-4F3"/>
+                                <exclude reference="9CX-va-adq"/>
+                                <exclude reference="SaN-Cr-o7g"/>
+                                <exclude reference="dRg-qY-CPg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="VWj-3E-mYn"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="atu-hi-9x2"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="2eB-Fn-pXw"/>
+                                <exclude reference="2il-7s-awi"/>
+                                <exclude reference="4eO-aT-5ss"/>
+                                <include reference="ACb-VA-NdL"/>
+                                <include reference="DKk-xo-q9m"/>
+                                <include reference="Msg-Oc-Fdt"/>
+                                <exclude reference="PRc-dd-Moz"/>
+                                <exclude reference="kSj-OJ-5Py"/>
+                                <exclude reference="u1d-mc-4F3"/>
+                                <exclude reference="xv2-sI-lRb"/>
+                                <exclude reference="ybR-bW-4jb"/>
+                                <include reference="9CX-va-adq"/>
+                                <exclude reference="Ohh-zM-S2X"/>
+                                <exclude reference="SaN-Cr-o7g"/>
+                                <exclude reference="atu-hi-9x2"/>
+                                <exclude reference="TB2-re-w7E"/>
+                                <include reference="dRg-qY-CPg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="goBtn" destination="iZE-Xc-Xil" id="G2n-hp-qcd"/>
+                        <outlet property="myScrollView" destination="HPw-CH-uud" id="D8U-eM-73F"/>
+                        <outlet property="pageControl" destination="LsO-6F-JnS" id="SmW-4I-1sw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="120.65217391304348"/>
+        </scene>
+    </scenes>
+</document>
