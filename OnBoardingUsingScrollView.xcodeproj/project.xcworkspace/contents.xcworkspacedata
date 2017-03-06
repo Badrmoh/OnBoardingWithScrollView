@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OnBoardingUsingScrollView.xcodeproj">
+      location = "self:scrollview(onboarding).xcodeproj">
    </FileRef>
 </Workspace>

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OnBoardingUsingScrollView.xcscheme</key>
+		<key>scrollview(onboarding).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>98F1ADF51E69549700A4BA37</key>
+		<key>9880235C1E6D51AA004FF121</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98F1AE091E69549700A4BA37</key>
+		<key>988023701E6D51AB004FF121</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98F1AE141E69549700A4BA37</key>
+		<key>9880237B1E6D51AB004FF121</key>
 		<dict>
 			<key>primary</key>
 			<true/>

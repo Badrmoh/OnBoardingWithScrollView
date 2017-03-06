@@ -1,14 +1,14 @@
 //
-//  OnBoardingUsingScrollViewUITests.swift
-//  OnBoardingUsingScrollViewUITests
+//  scrollview_onboarding_UITests.swift
+//  scrollview(onboarding)UITests
 //
-//  Created by Badr Moh on 03/03/2017.
+//  Created by Badr Moh on 06/03/2017.
 //  Copyright © 2017 Badr Moh. All rights reserved.
 //
 
 import XCTest
 
-class OnBoardingUsingScrollViewUITests: XCTestCase {
+class scrollview_onboarding_UITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

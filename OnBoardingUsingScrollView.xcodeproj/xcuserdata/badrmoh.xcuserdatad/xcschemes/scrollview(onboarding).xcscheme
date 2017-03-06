@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98F1ADF51E69549700A4BA37"
-               BuildableName = "OnBoardingUsingScrollView.app"
-               BlueprintName = "OnBoardingUsingScrollView"
-               ReferencedContainer = "container:OnBoardingUsingScrollView.xcodeproj">
+               BlueprintIdentifier = "9880235C1E6D51AA004FF121"
+               BuildableName = "scrollview(onboarding).app"
+               BlueprintName = "scrollview(onboarding)"
+               ReferencedContainer = "container:scrollview(onboarding).xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98F1AE091E69549700A4BA37"
-               BuildableName = "OnBoardingUsingScrollViewTests.xctest"
-               BlueprintName = "OnBoardingUsingScrollViewTests"
-               ReferencedContainer = "container:OnBoardingUsingScrollView.xcodeproj">
+               BlueprintIdentifier = "988023701E6D51AB004FF121"
+               BuildableName = "scrollview(onboarding)Tests.xctest"
+               BlueprintName = "scrollview(onboarding)Tests"
+               ReferencedContainer = "container:scrollview(onboarding).xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98F1AE141E69549700A4BA37"
-               BuildableName = "OnBoardingUsingScrollViewUITests.xctest"
-               BlueprintName = "OnBoardingUsingScrollViewUITests"
-               ReferencedContainer = "container:OnBoardingUsingScrollView.xcodeproj">
+               BlueprintIdentifier = "9880237B1E6D51AB004FF121"
+               BuildableName = "scrollview(onboarding)UITests.xctest"
+               BlueprintName = "scrollview(onboarding)UITests"
+               ReferencedContainer = "container:scrollview(onboarding).xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "98F1ADF51E69549700A4BA37"
-            BuildableName = "OnBoardingUsingScrollView.app"
-            BlueprintName = "OnBoardingUsingScrollView"
-            ReferencedContainer = "container:OnBoardingUsingScrollView.xcodeproj">
+            BlueprintIdentifier = "9880235C1E6D51AA004FF121"
+            BuildableName = "scrollview(onboarding).app"
+            BlueprintName = "scrollview(onboarding)"
+            ReferencedContainer = "container:scrollview(onboarding).xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "98F1ADF51E69549700A4BA37"
-            BuildableName = "OnBoardingUsingScrollView.app"
-            BlueprintName = "OnBoardingUsingScrollView"
-            ReferencedContainer = "container:OnBoardingUsingScrollView.xcodeproj">
+            BlueprintIdentifier = "9880235C1E6D51AA004FF121"
+            BuildableName = "scrollview(onboarding).app"
+            BlueprintName = "scrollview(onboarding)"
+            ReferencedContainer = "container:scrollview(onboarding).xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "98F1ADF51E69549700A4BA37"
-            BuildableName = "OnBoardingUsingScrollView.app"
-            BlueprintName = "OnBoardingUsingScrollView"
-            ReferencedContainer = "container:OnBoardingUsingScrollView.xcodeproj">
+            BlueprintIdentifier = "9880235C1E6D51AA004FF121"
+            BuildableName = "scrollview(onboarding).app"
+            BlueprintName = "scrollview(onboarding)"
+            ReferencedContainer = "container:scrollview(onboarding).xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

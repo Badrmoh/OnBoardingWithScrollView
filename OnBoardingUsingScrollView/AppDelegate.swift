@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  OnBoardingUsingScrollView
+//  scrollview(onboarding)
 //
-//  Created by Badr Moh on 03/03/2017.
+//  Created by Badr Moh on 06/03/2017.
 //  Copyright © 2017 Badr Moh. All rights reserved.
 //
 
@@ -12,8 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initialVC = sb.instantiateViewController(withIdentifier: "onboarding")
         
         let userDefaults = UserDefaults.standard
-        if userDefaults.bool(forKey: "onboardingComplete"){
-            initialVC = sb.instantiateViewController(withIdentifier: "master")
+        if userDefaults.bool(forKey: "onBoardingComplete") {
+            initialVC = sb.instantiateViewController(withIdentifier: "app")
         }
         
         window?.rootViewController = initialVC
